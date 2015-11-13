@@ -1,7 +1,7 @@
 {
-    "name": "RelayShield",
-    "version": "0.0.3",
-    "author": "Richard Whitney <richard@particle.io>",
+    "name": "SimpleRelay",
+    "version": "0.0.1",
+    "author": "Julien Ithurbide <jithurbide@gmail.com>",
     "license": "LGPL",
-    "description": "Functions to make the Photon Relay Shield even easier!"
+    "description": "Functions to make the DFRobot relay working on a Photon board!"
 }
