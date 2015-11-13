@@ -3,11 +3,11 @@
 
 #include "application.h"
 
-class RelayShield {
+class SimpleRelay {
 
  public:
 
-  RelayShield();
+  SimpleRelay();
   void  init(void);
   void  on();
   void  off();
