@@ -1,6 +1,6 @@
 {
     "name": "SimpleRelay",
-    "version": "0.0.3",
+    "version": "0.0.31",
     "author": "Julien Ithurbide <jithurbide@gmail.com>",
     "license": "LGPL",
     "description": "Functions to make the DFRobot relay working on a Photon board!"

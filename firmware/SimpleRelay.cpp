@@ -1,4 +1,4 @@
-#include "RelayShield.h"
+#include "SimpleRelay.h"
 
 uint8_t relay1 = 3;
 
