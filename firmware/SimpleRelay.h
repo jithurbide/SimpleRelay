@@ -8,7 +8,7 @@ class SimpleRelay {
  public:
 
   SimpleRelay();
-  void  init(void);
+  void  init(short relayPin);
   void  on();
   void  off();
   bool isOn();

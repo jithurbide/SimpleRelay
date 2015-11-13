@@ -11,7 +11,7 @@ int relayOff(String command);
 
 void setup() {
     //.begin() sets up a couple of things and is necessary to use the rest of the functions
-    myRelay.init();
+    myRelay.init(3);
 
     // Use myRelays.begin(2); if you have the square, white RelayShield (from the Core)
     // to use, just add a '2' between the parentheses in the code above.

@@ -1,15 +1,18 @@
 #include "SimpleRelay.h"
 
-uint8_t relay1 = 3;
+uint8_t relay1;
 
 
 bool relay = false;
 
 SimpleRelay::SimpleRelay(){
 
+  relay1=1;
+
 }
 
-void SimpleRelay::init(){
+void SimpleRelay::init(short relayPin){
+  relay1 = relayPin;
   pinMode(relay1, OUTPUT);
 }
 
