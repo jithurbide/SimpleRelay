@@ -14,19 +14,22 @@ SimpleRelay::SimpleRelay(){
 void SimpleRelay::init(short relayPin){
   relay1 = relayPin;
   pinMode(relay1, OUTPUT);
+  // Relay off
+  digitalWrite(relay1, HIGH);
+  relay = false;
 }
 
 
 void SimpleRelay::on(){
 
-  digitalWrite(relay1, HIGH);
+  digitalWrite(relay1, LOW);
   relay = true;
 
 }
 
 void SimpleRelay::off(){
 
-  digitalWrite(relay1, LOW);
+  digitalWrite(relay1, HIGH);
   relay = false;
 
 }
