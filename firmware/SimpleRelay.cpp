@@ -5,23 +5,23 @@ uint8_t relay1 = 3;
 
 bool relay = false;
 
-RelayShield::RelayShield(){
+SimpleRelay::SimpleRelay(){
 
 }
 
-void RelayShield::init(){
+void SimpleRelay::init(){
   pinMode(relay1, OUTPUT);
 }
 
 
-void RelayShield::on(){
+void SimpleRelay::on(){
 
   digitalWrite(relay1, HIGH);
   relay = true;
 
 }
 
-void RelayShield::off(){
+void SimpleRelay::off(){
 
   digitalWrite(relay1, LOW);
   relay = false;
@@ -29,6 +29,6 @@ void RelayShield::off(){
 }
 
 
-bool RelayShield::isOn(){
+bool SimpleRelay::isOn(){
   return relay;
 }
