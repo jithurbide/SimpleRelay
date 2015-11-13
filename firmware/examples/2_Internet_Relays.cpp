@@ -1,4 +1,5 @@
 // This #include statement was automatically added by the Particle IDE.
+#include "application.h"
 #include "SimpleRelay/SimpleRelay.h"
 
 // Create an instance of the RelayShield library, so we have something to talk to

@@ -1,7 +1,7 @@
-#include "application.h"
-
 #ifndef SimpleRelay_h
 #define SimpleRelay_h
+
+#include "application.h"
 
 class RelayShield {
 
@@ -16,4 +16,4 @@ class RelayShield {
 };
 
 
-#endif 
+#endif
