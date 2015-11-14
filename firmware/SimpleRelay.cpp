@@ -20,17 +20,17 @@ void SimpleRelay::init(short relayPin, relayConnection conTo){
   {
     case CONNECT_TO_NO:
       //on when low
-      OFF = HIGH;
-      ON = LOW;
+      ON = HIGH;
+      OFF = LOW;
     break;
     case CONNECT_TO_NC:
     // on when HIGH
-    ON = HIGH;
-    OFF = LOW;
+    OFF = HIGH;
+    ON = LOW;
     break;
   }
   // Relay off
-  digitalWrite(relay1, OFF);
+  digitalWrite(relay1, HIGH);
   relay = false;
 }
 
