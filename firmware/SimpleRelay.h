@@ -13,7 +13,7 @@ class SimpleRelay {
  public:
 
   SimpleRelay();
-  void  init(short relayPin);
+  void  init(short relayPin, relayConnection conTo);
   void  on();
   void  off();
   bool isOn();
