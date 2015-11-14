@@ -30,7 +30,7 @@ void SimpleRelay::init(short relayPin, relayConnection conTo){
     break;
   }
   // Relay off
-  digitalWrite(relay1, HIGH);
+  digitalWrite(relay1, LOW);
   relay = false;
 }
 
