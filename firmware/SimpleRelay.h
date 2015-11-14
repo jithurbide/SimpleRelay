@@ -3,6 +3,11 @@
 
 #include "application.h"
 
+typedef enum{
+  CONNECT_TO_NO,
+  CONNECT_TO_NC
+}relayConnection;
+
 class SimpleRelay {
 
  public:
@@ -12,6 +17,10 @@ class SimpleRelay {
   void  on();
   void  off();
   bool isOn();
+private:
+  relayConnection statRelay;
+  int ON;
+  int OFF;
 
 };
 

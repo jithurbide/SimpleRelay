@@ -7,7 +7,7 @@ SimpleRelay myRelay;
 
 void setup() {
     // .begin() sets up a couple of things and is necessary to use the rest of the functions
-    myRelay.init(3);
+    myRelay.init(D7,CONNECT_TO_NC);
 
     // Use myRelays.begin(2); if you have the square, white RelayShield (from the Core)
     // to use, just add a '2' between the parentheses in the code above.
