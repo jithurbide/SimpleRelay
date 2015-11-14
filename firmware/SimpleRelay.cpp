@@ -15,7 +15,8 @@ void SimpleRelay::init(short relayPin, relayConnection conTo){
   relay1 = relayPin;
   pinMode(relay1, OUTPUT);
 
-  // send low to be ON
+  // send low to set relay OFF
+  // to work as led relay on when light is on connect your light to NO
   switch(conTo)
   {
     case CONNECT_TO_NO:
@@ -30,7 +31,7 @@ void SimpleRelay::init(short relayPin, relayConnection conTo){
     break;
   }
   // Relay off
-  digitalWrite(relay1, LOW);
+  digitalWrite(relay1, OFF);
   relay = false;
 }
 
